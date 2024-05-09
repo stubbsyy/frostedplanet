@@ -4,7 +4,159 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title style="color: #ff6000;">Ian Stubbs</title>
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <style>
+      body {
+          margin: 0;
+          padding: 0;
+          background-color: #292b30;
+          font-family: monospace;
+          font-size: 14px;
+          line-height: 1.4;
+          color: rgb(232, 232, 232);
+      }
+
+      /* Layout */
+      .container {
+          margin-left: auto;
+          margin-right: auto;
+          padding-left: 15px;
+          padding-right: 15px;
+      }
+      .ppic {
+          border: 1px #ff6000 solid;
+
+      }
+      @media (min-width: 992px) {
+          .container {
+              width: 992px;
+          }
+      }
+      .row {
+          display: grid;
+          grid-template-columns: repeat(12, 1fr);
+      }
+
+      /* Props */
+      #dhead {
+          margin-top: 20px;
+      }
+      #dpic {
+          grid-column: span 6;
+          text-align: right;
+      }
+      #ddesc {
+          padding-top: 40px;
+          padding-left: 20px;
+          grid-column: span 6;
+      }
+      @media (max-width: 991px) {
+          #dpic {
+            grid-column: span 12;
+            text-align: center;
+          }
+          #ddesc {
+            grid-column: span 12;
+            padding-top: 20px;
+            text-align: center;
+          }
+      }
+      h1 {
+          font-size: 34px;
+          font-weight: normal;
+          padding: 0;
+          margin: 0;
+      }
+      h2 {
+          font-weight: normal;
+          font-style: italic;
+          color: #999;
+          font-size: 18px;
+          padding: 0;
+          margin: 5px 0 10px 0;
+      }
+      @media (min-width: 992px) {
+          h2 {
+              max-width: 300px;
+          }
+      }
+      #dpic img {
+          width: 240px;
+          height: 240px;
+          border-radius: 120px;
+      }
+      .iico {
+          width: 40px;
+          height: 40px;
+          background-color: #ff6000;
+          border-radius: 50%;
+      }
+      #demail {
+          margin-top: 10px;
+          color: rgb(221, 221, 221);
+          opacity: 0;
+          transition: opacity 0.7s;
+      }
+      hr {
+          height: 1px;
+          background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), #ff6000,rgba(255, 255, 255, 0));
+          background-image:    -moz-linear-gradient(left, rgba(255, 255, 255, 0), #ff6000,rgba(255, 255, 255, 0));
+          background-image:     -ms-linear-gradient(left, rgba(255, 255, 255, 0), #ff6000,rgba(255, 255, 255, 0));
+          background-image:      -o-linear-gradient(left, rgba(255, 255, 255, 0), #ff6000,rgba(255, 255, 255, 0));
+          padding: 0;
+          margin: 20px 0px 20px 0px;
+          border: 0;
+          color: white;
+      }
+      .ico {
+          grid-column: span 1;
+          vertical-align: top;
+          border-left: 2px solid #cfcfcf;
+          position: relative;
+      }
+      .ico img {
+          border-radius: 5px;
+          width: 100%;
+          max-width: 80px;
+          margin-left: 10px;
+      }
+      .desc {
+          grid-column: span 10;
+          vertical-align: top;
+          font-size: 17px;
+          padding-left: 28px;
+          padding-bottom: 20px;
+      }
+      .entry-dot {
+          position: absolute;
+          top: 0px;
+          left: -7px;
+          width: 10px;
+          height: 10px;
+          border-radius: 7px;
+          background-color: #cfcfcf;
+          border: 2px solid white;
+      }
+      .timespan {
+          grid-column: span 1;
+          font-size: 11px;
+          text-align: left;
+          padding-right: 7px;
+          color: #bbb;
+      }
+      @media (max-width: 991px) {
+
+      }
+      .ctitle {
+          font-size: 36px;
+          margin-bottom: 20px;
+          margin-top: 40px;
+      }
+      @media (max-width: 991px) {
+      }
+      @media (max-width: 768px) {
+      }
+    </style>
   </head>
   <body>
 
